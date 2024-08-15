@@ -2,8 +2,13 @@ import random
 import json
 import torch
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+
+# Flask app initialization
+app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})  # Enable CORS for your API
 
 # Initialize the device and load model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -48,9 +53,6 @@ def get_response(msg):
 
     return "I do not understand..."
 
-# Flask app initialization
-app = Flask(__name__)
-
 # Route for the main page
 @app.route("/")
 def home():
@@ -67,4 +69,4 @@ def chat():
         return jsonify({"response": "Please enter a valid message."})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
