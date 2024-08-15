@@ -1,0 +1,155 @@
+/* General Styling */
+*,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+    --operatorMessageColor: #E0E0E0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: #F1F1F1;
+}
+
+/* Chatbox Position */
+.chatbox {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Chatbox Button */
+.chatbox__button {
+    z-index: 1000; /* Ensure button is on top */
+}
+
+.chatbox__button button {
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Chatbox Content */
+.chatbox__support {
+    display: none;
+    flex-direction: column;
+    background: #f9f9f9;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 60px; /* Adjusted to position above the button */
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(0.8);
+}
+
+/* Show chatbox on button click */
+.chatbox--active .chatbox__support {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Chatbox Header */
+.chatbox__header {
+    background: var(--primaryGradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+/* Messages Section */
+.chatbox__messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.messages__item {
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+/* Visitor Messages (User) */
+.messages__item--visitor {
+    background-color: var(--primary);
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+    max-width: 60%; /* Limit max width to 60% of the container */
+    margin-left: auto; /* Align to the right */
+    width: fit-content; /* Take only the necessary space */
+}
+
+/* Operator Messages (Response) */
+.messages__item--operator {
+    background-color: var(--operatorMessageColor);
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    max-width: 60%; /* Limit max width to 60% of the container */
+    margin-right: auto; /* Align to the left */
+    width: fit-content; /* Take only the necessary space */
+}
+
+/* Footer */
+.chatbox__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.chatbox__send--footer {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.chatbox__description--header {
+    font-size: .9rem;
+    color: #ffffff; /* Change this to the desired color */
+}
+.chatbox__heading--header {
+    font-size: 1.2rem;
+    color: #ffffff; /* Change this to your desired color */
+}

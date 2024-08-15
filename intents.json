@@ -1,0 +1,166 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "How are you?"
+      ],
+      "responses": [
+        "Hello! How can I assist you with your farming needs?",
+        "Hi there! What agricultural advice can I provide today?",
+        "Hello! How can I help you with your crops or farm management?"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather forecast for my area?",
+        "How does weather affect crop growth?",
+        "Will it rain this week?",
+        "How can I prepare for a drought?"
+      ],
+      "responses": [
+        "You can check the weather feature on the website for accurate information.",
+        "Weather conditions like temperature and rainfall are crucial for crop growth. Ensure you monitor them regularly.",
+        "You can check the weather feature on the website for accurate information.",
+        "To prepare for a drought, consider using water-efficient irrigation methods and drought-resistant crops."
+      ]
+    },
+    {
+      "tag": "irrigation",
+      "patterns": [
+        "What are the best irrigation methods for my farm?",
+        "How often should I water my crops?",
+        "Can you recommend a drip irrigation system?",
+        "What are the signs of overwatering?"
+      ],
+      "responses": [
+        "Drip irrigation is efficient for conserving water and targeting specific plants. Sprinkler systems are also effective for larger areas.",
+        "Water your crops based on their specific needs, usually 1-2 inches of water per week.",
+        "Drip irrigation systems can be customized for different crop types and field sizes. Look for systems with adjustable flow rates.",
+        "Signs of overwatering include yellowing leaves, root rot, and waterlogged soil. Ensure proper drainage to avoid these issues."
+      ]
+    },
+    {
+      "tag": "planting_tips",
+      "patterns": [
+        "How deep should I plant seeds?",
+        "What is the best spacing for tomato plants?",
+        "When is the best time to start planting?",
+        "Can you give me tips for planting in raised beds?"
+      ],
+      "responses": [
+        "Seeds should be planted at a depth roughly twice their size. Check specific seed packets for detailed instructions.",
+        "Tomato plants should be spaced about 18-24 inches apart to ensure adequate air circulation and growth.",
+        "The best time to start planting depends on your local climate. Generally, plant after the last frost in spring.",
+        "For raised beds, ensure good soil quality and spacing between plants. Raised beds warm up faster and drain well, which benefits plant growth."
+      ]
+    },
+    {
+      "tag": "plant_nutrition",
+      "patterns": [
+        "What nutrients are essential for plant growth?",
+        "How can I test soil nutrient levels?",
+        "What are the symptoms of nutrient deficiency?",
+        "Can you suggest a fertilizer mix for fruit trees?"
+      ],
+      "responses": [
+        "Essential nutrients include nitrogen, phosphorus, and potassium. Plants also need calcium, magnesium, and sulfur.",
+        "You can test soil nutrient levels using a soil test kit available at garden centers or through a local agricultural extension office.",
+        "Symptoms of nutrient deficiency include yellowing leaves, stunted growth, and poor fruit development.",
+        "For fruit trees, a balanced fertilizer with an NPK ratio of 10-10-10 or 12-12-12 is generally recommended."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "Goodbye! Wishing you a successful farming season.",
+        "Take care! Feel free to ask if you need any more farming advice.",
+        "Bye! Come back if you need more agricultural tips."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome! Happy farming!",
+        "Glad I could help! Best of luck with your crops.",
+        "Anytime! I'm here to help with your agricultural questions."
+      ]
+    },
+    {
+      "tag": "crops_season",
+      "patterns": [
+        "What crops can I plant in the summer?",
+        "Which seeds are best for winter?",
+        "What should I grow in spring?",
+        "Can you suggest crops for autumn?"
+      ],
+      "responses": [
+        "In the summer, you can plant crops like tomatoes, corn, and cucumbers.",
+        "For winter, consider planting garlic, onions, and spinach.",
+        "Spring is great for growing lettuce, peas, and carrots.",
+        "In autumn, you can plant crops like broccoli, kale, and beets."
+      ]
+    },
+    {
+      "tag": "soil_type",
+      "patterns": [
+        "What crops are best for clay soil?",
+        "Can I grow anything in sandy soil?",
+        "Which plants thrive in loamy soil?",
+        "What should I plant in rocky soil?"
+      ],
+      "responses": [
+        "Clay soil is ideal for crops like lettuce, cabbage, and broccoli.",
+        "Sandy soil works well for carrots, radishes, and potatoes.",
+        "Loamy soil is versatile and can support almost any crop, including tomatoes, peppers, and beans.",
+        "In rocky soil, try growing herbs like thyme, rosemary, and oregano."
+      ]
+    },
+    {
+      "tag": "fertilizer",
+      "patterns": [
+        "Which fertilizer is good for my crops?",
+        "How often should I fertilize my plants?",
+        "What type of fertilizer should I use for vegetables?",
+        "Can you recommend organic fertilizers?"
+      ],
+      "responses": [
+        "A balanced NPK fertilizer is generally good for most crops.",
+        "Fertilize your plants every 4-6 weeks during the growing season.",
+        "For vegetables, a compost-rich organic fertilizer is ideal.",
+        "You can use compost, manure, or bone meal as effective organic fertilizers."
+      ]
+    },
+    {
+      "tag": "pest_control",
+      "patterns": [
+        "How can I protect my crops from pests?",
+        "What are natural ways to get rid of insects on plants?",
+        "Can you suggest organic pest control methods?",
+        "What should I do about bugs eating my plants?"
+      ],
+      "responses": [
+        "Using neem oil or introducing beneficial insects like ladybugs can help control pests.",
+        "You can try spraying a mixture of water and mild soap to deter insects naturally.",
+        "Companion planting, like growing marigolds with tomatoes, helps deter pests.",
+        "Consider using row covers or insecticidal soap as organic pest control methods."
+      ]
+    }
+  ]
+}
