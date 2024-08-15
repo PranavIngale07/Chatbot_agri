@@ -9,7 +9,7 @@ from nltk_utils import bag_of_words, tokenize
 # Flask app initialization
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})  # Enable CORS for your API
-
+#deploy
 # Initialize the device and load model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
